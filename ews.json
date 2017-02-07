@@ -1,0 +1,19 @@
+{
+	"accounts":
+		[
+			{
+				"server":"mail.server.com:443",
+				"username":"myusername",
+				"password":"mypassword",
+				"sync":"",
+				"sync_time":""
+			},
+			{
+				"server":"mail.server2.com:443",
+				"username":"myusername",
+				"password":"mypassword",
+				"sync":"",
+				"sync_time":""
+			}
+		]
+}

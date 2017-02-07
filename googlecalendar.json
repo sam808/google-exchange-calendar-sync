@@ -1,0 +1,12 @@
+{
+	"application_name":"Google Exchange Calendar Sync",
+	"calendars":
+		[
+			{
+				"work":"calendar ID"
+			},
+			{
+				"soccer":"calendar ID"
+			}
+		]
+}

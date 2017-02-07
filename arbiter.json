@@ -1,0 +1,9 @@
+{
+	"accounts":
+		[
+			{
+				"username":"myusername",
+				"password":"mypassword"
+			}
+		]
+}
