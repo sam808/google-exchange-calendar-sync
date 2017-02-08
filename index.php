@@ -509,7 +509,6 @@
                     $_mtg_obj = (object)$_mtg_obj;
 
     				// print_r($_mtg_obj);
-    				
     				switch ($_mtg['action']) {
     					case 'update':
     					case 'create':
