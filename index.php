@@ -342,7 +342,7 @@
 	
 	function map_arbiter_game_to_google_event($arbiter_game) {
         $_data = Arbiter_API::MapGameToGoogleEventArray($arbiter_game);
-
+        
 		$gle_event = new Google_Service_Calendar_Event($_data);
 
 		// can't have ='s in the extended property value because we match it later with a key=value query
@@ -551,7 +551,9 @@
 			$arb = new Arbiter_API();
 			$games = $arb->get_games($account->username, $account->password);
 			foreach ($games as $game) {
-				if ($game['game_id'] == 'Game') continue;
+				if ($game['game_id'] == 'Game' || empty($game['game_id'])) {
+					continue;
+				}
 				sync_google_event_from_arbiter_game($gle, $gle_config['calendars']['soccer'], $game);
 				echo '[ArbiterSports ' . $account->username . '] Created/updated ' . $game['home'] . ' vs. ' . $game['away'] . ' at ' . $game['site'] . ' on ' . $game['datetime'] . PHP_EOL;
 			}
