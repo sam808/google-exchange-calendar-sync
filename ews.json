@@ -2,9 +2,9 @@
 	"accounts":
 		[
 			{
-				"server":"mail.server.com:443",
-				"username":"myusername",
-				"password":"mypassword",
+				"server":"o365.office.com:443",
+				"username":"u123me",
+				"password":"Te$st1ngSnykP@$$wordF1nding",
 				"sync":"",
 				"sync_time":""
 			},
